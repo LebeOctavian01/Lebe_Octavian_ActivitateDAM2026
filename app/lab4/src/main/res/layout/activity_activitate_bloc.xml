@@ -1,0 +1,216 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F5F9"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GESTIONARE IMOBILE"
+            android:textColor="#5265C7"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.08" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/adauga_bloc"
+            android:textColor="#17213A"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Completeaza detaliile cladirii"
+            android:textColor="#68738A"
+            android:textSize="15sp"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DATE GENERALE"
+                android:textColor="#5265C7"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adresa_blocului"
+                android:textColor="#26324B"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etAdresa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ex: Strada Florilor nr. 10"
+                android:inputType="textPostalAddress"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/numar_apartament"
+                android:textColor="#26324B"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etApartamente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ex: 40"
+                android:inputType="number"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/numar_etaje"
+                android:textColor="#26324B"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etEtaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ex_8"
+                android:inputType="number"
+                android:padding="12dp" />
+
+            <CheckBox
+                android:id="@+id/cbLift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cladirea dispune de lift"
+                android:layout_marginTop="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E3E7EF"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CARACTERISTICI"
+                android:textColor="#5265C7"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipul blocului"
+                android:textColor="#26324B"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgTipBloc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbVechi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vechi" />
+
+                <RadioButton
+                    android:id="@+id/rbNou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nou" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Materialul blocului"
+                android:textColor="#26324B"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp" />
+
+            <Spinner
+                android:id="@+id/spMaterial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Evaluare (1-5 stele)"
+                android:textColor="#26324B"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <RatingBar
+                android:id="@+id/rbEvaluare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1"
+                android:rating="3"
+                android:layout_marginTop="4dp" />
+
+            <Switch
+                android:id="@+id/swLocuit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Blocul este locuit"
+                android:checked="true"
+                android:layout_marginTop="12dp" />
+
+            <Button
+                android:id="@+id/btnSalveaza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salveaza blocul"
+                android:textAllCaps="false"
+                android:textSize="17sp"
+                android:layout_marginTop="20dp"
+                android:padding="12dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aplicatie de administrare a imobilelor"
+            android:textColor="#68738A"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="12dp" />
+
+    </LinearLayout>
+
+</ScrollView>

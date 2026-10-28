@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Lab 4</string>
+    <string name="introduceti_numele">Introduceti numele</string>
+    <string name="apasa">apasa</string>
+    <string name="esti_student">Esti student?</string>
+    <string name="adauga_bloc">Adauga bloc</string>
+    <string name="ex_8">Ex: 8</string>
+    <string name="numar_etaje">Numar etaje</string>
+    <string name="numar_apartament">Numar apartament</string>
+    <string name="adresa_blocului">Adresa blocului</string>
+
+    <string-array name="lista">
+        <item> Student bursier</item>
+        <item> Student taxa </item>
+    </string-array>
+</resources>
